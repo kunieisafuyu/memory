@@ -449,9 +449,85 @@ table{
   font-size: .9rem;
   font-weight: 500;
 }
+.text-lists:hover {
+  background-color: var(--secondary-text);
+}
+tr[class=text-lists]:focus-within{
+  background-color: var(--secondary-text);
+}
+.nav-action{
+  height: 46px;
+  width: calc(75% - 150px);
+  top: 60px;
+  right: 0;
+  display: none;
 
+}
+.nav-action-items{
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 15px gray;
+  border-radius: 8px;
+  margin: 0 16px;
+}
 
-/* Position */
+tr[class=text-lists]:focus-within .nav-action{
+  display: block;
+}
+.nav-action-item{
+  padding: 8px;
+}
+.nav-action-text{
+  font-size: .8rem;
+  padding-left: 4px;
+}
+
+.btn-action{
+  padding: 10px 10px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+.btn-action:hover {
+  background-color: #b8c5be;
+}
+.table-body-text-1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dot-three{
+  background-color: transparent;
+  border-radius: 2px;
+}
+.dot-three:hover {
+  background-color: #b8c5be;
+  cursor: pointer;
+}
+
+.dot-three-item{
+  width: 100px;
+  left: 30px;
+  bottom: -70px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 15px gray;
+  border-radius: 4px;
+  padding: 4px;
+  display: none;
+}
+.dot-three-item-text {
+  padding: 8px 10px;
+}
+.dot-three-item-text:hover {
+  background-color: #b8c5be;
+  cursor: pointer;
+}
+.dot-three:focus .dot-three-item {
+  display: block;
+}
+
+/* Reponsive */
 
 @media (max-width: 1024px) and (min-width: 610px) {
   html {
@@ -488,6 +564,10 @@ table{
 
   .folder{
     width: calc(100% - 60px);
+  }
+  .nav-action{
+    width: calc(100% - 60px);
+    top: 52px;
   }
 }
 
