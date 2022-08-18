@@ -81,13 +81,17 @@ html {
 
 /* Chỉnh theo cột */
 
-.column {
+.d-flex {
   display: flex;
+}
+.column {
   flex-direction: column;
 }
 
 /* justify */
-
+.j-end {
+  justify-content: flex-end;
+}
 .j-center {
   justify-content: center;
 }

@@ -24,9 +24,32 @@
         <div class="text-head">Drive Of Me</div>
       </div>
 
-      <div class="icon-action">
+      <div class="icon-action row a-center">
         <img class="icon-img" src="./img/Sun.svg" alt="" />
-        <img class="icon-img" src="./img/UserCircle.svg" alt="" />
+        <img class="icon-img icon-user" src="./img/UserCircle.svg" alt="" />
+        <button class="user-name">
+          <div class="user-name-items p-relative">
+            <p class="user-name-text">MT</p>
+            <div class="drop-user">
+              <div class="logout p-absolute">
+                <p class="out row j-end">Đăng xuất</p>
+                <div class="row a-center">
+                  <div class="col-4">
+                    <p class="user-icon-text">
+                      MT
+                    </p>
+                  </div>
+                  <div class="text-uses col-8">
+                    <p class="user-head">Minh Thao</p>
+                    <p class="user-email">kienminh.tnut@gmail.com</p>
+                    <a href="./">Hồ sơ của tôi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </button>
         <img class="icon-img-1" src="./img/List.svg" alt="" />
       </div>
     </header>
@@ -99,7 +122,7 @@
 
     <div class="row tree-container">
       <div class="next"></div>
-      <div class="tree-view col-3">
+      <div class="tree-view col-3 scoll-tree">
         <div class="tree">
           <div class="row">
             <span class="text-tree-head">Read only</span>
@@ -254,12 +277,17 @@
         </div>
       </div>
       <div class="folder">
-          <nav class="navbar-folder">
-            <div class="row j-between a-center nav-folder-items">
-              <div class="navbar-folder-left">
-                <button class="btn-nav-folder-new">
-                  <div class="row a-center">
-                    <img class="icon-btn" src="./img/Plus.svg" alt=" dấu cộng" />
+        <nav class="navbar-folder">
+          <div class="row j-between a-center nav-folder-items">
+            <div class="navbar-folder-left row a-center">
+              <button class="btn-nav-folder-new">
+                <div class="item-content p-relative">
+                  <div class="row a-center items-1">
+                    <img
+                      class="icon-btn"
+                      src="./img/Plus.svg"
+                      alt=" dấu cộng"
+                    />
                     <p class="text-btn">Mới</p>
                     <img
                       class="icon-btn"
@@ -267,9 +295,20 @@
                       alt="arow down"
                     />
                   </div>
-                </button>
-                <button class="btn-nav-folder-up">
-                  <div class="row a-center">
+                  <div class="drop-buton row a-center p-absolute">
+                    <img
+                      class="drop-buton-icon"
+                      src="./img/Vector.svg"
+                      alt="folder"
+                    />
+                    <p class="text-drop">Thư mục</p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="btn-nav-folder-up">
+                <div class="item-content p-relative">
+                  <div class="row a-center items">
                     <img
                       class="icon-btn-1"
                       src="./img/ArrowLineUp.svg"
@@ -282,12 +321,18 @@
                       alt="arow down"
                     />
                   </div>
-                </button>
-              </div>
+                  <div class="drop-up p-absolute a-end">
+                    <p class="text-drop">Tệp</p>
+                    <p class="text-drop">Thư mục</p>
+                  </div>
+                </div>
+              </button>
+            </div>
 
-              <div class="navbar-folder-right">
-                <button class="btn-nav-folder-up">
-                  <div class="row a-center">
+            <div class="navbar-folder-right">
+              <button class="btn-nav-folder-up">
+                <div class="item-content p-relative">
+                  <div class="row a-center items">
                     <img
                       class="icon-btn-1"
                       src="./img/SortAscending.svg"
@@ -300,9 +345,16 @@
                       alt="arow down"
                     />
                   </div>
-                </button>
-                <button class="btn-nav-folder-up">
-                  <div class="row a-center">
+                  <div class="drop-up p-absolute a-end">
+                    <p class="text-drop">Tên</p>
+                    <p class="text-drop">Đã sửa đổi</p>
+                    <p class="text-drop">Kích thước tệp</p>
+                  </div>
+                </div>
+              </button>
+              <button class="btn-nav-folder-up">
+                <div class="item-content p-relative">
+                  <div class="row a-center items">
                     <img
                       class="icon-btn-1"
                       src="./img/TextIndent.svg"
@@ -315,185 +367,245 @@
                       alt="arow down"
                     />
                   </div>
-                </button>
-              </div>
-            </div>
-          </nav>
-          <div class="table-folder">
-            <div class="row a-center">
-              <h3 class="text-head-table">Tệp của tôi</h3>
-            </div>
-            <div class="table">
-              <table class="table-items">
-                <thead class="table-head">
-                  <tr class="text-lists">
-                    <th class="list-item col-1">
-                      <div class="input-icon row a-center">
-                        <input type="radio" />
+                  <div class="drop-infor p-absolute a-end">
+                    <div class="infor-drop">
+                      <div class="infor-items row a-center">
                         <div class="file-icon-table">
-                          <img src="./img/File.svg" alt="foder" />
+                          <img src="./img/Vector.svg" alt="Vector" />
+                        </div>
+                        <p class="infor-text">Tệp của tôi</p>
+                      </div>
+                      <div class="row">
+                        <p class="infor-text-head">Tất cả hoạt động</p>
+                      </div>
+                      <div class="row">
+                        <p class="infor-date">10 năm trước</p>
+                      </div>
+                      <div class="infor-date-items row a-center">
+                        <div class="infor-date-icon">
+                          <img src="./img/Plus.svg" alt="cong" />
+                        </div>
+                        <div class="infor-date-texts">
+                          <p class="">
+                            <strong>Bạn</strong> đã tạo
+                            <a href="/#">Document 3</a>
+                          </p>
+                          <p class="text-small">12 / 12</p>
                         </div>
                       </div>
-                    </th>
-                    <th class="list-item col-5">
-                      <div class="row a-center">
-                        <p class="table-head-text">Tên</p>
-                        <img class="icon-thead" src="./img/ArrowUp.svg" alt="" />
-                      </div>
-                    </th>
-                    <th class="list-item col-2">
-                      <div class="row j-between a-center">
-                        <p class="table-head-text">Đã sửa đổi</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/CaretDown.svg"
-                          alt=""
-                        />
-                      </div>
-                    </th>
-                    <th class="list-item col-2">
-                      <div class="row j-between a-center">
-                        <p class="table-head-text">Dung lượng</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/CaretDown.svg"
-                          alt=""
-                        />
-                      </div>
-                    </th>
-                    <th class="list-item col-2">
-                      <div class="row j-between a-center">
-                        <p class="table-head-text">Chia sẻ</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/CaretDown.svg"
-                          alt=""
-                        />
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                  <tr class="text-lists">
-                    <td class="list-item col-1">
-                      <div class="input-icon row a-center">
-                        <input type="radio" name='checked'/>
-                        <div class="file-icon-table">
-                          <img src="./img/Vector.svg" alt="foder" />
+                      <div class="infor-date-items row a-center">
+                        <div class="infor-date-icon">
+                          <img src="./img/Plus.svg" alt="cong" />
+                        </div>
+                        <div class="infor-date-texts">
+                          <p class="">
+                            <strong>Bạn</strong> đã tạo
+                            <a href="/#">Document 2</a>
+                          </p>
+                          <p class="text-small">12 / 12</p>
                         </div>
                       </div>
-                    </td>
-                    <td class="list-item col-5">
-                      <div class="row j-between a-center">
-                        <p class="table-body-text">Doccument</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/DotsThreeVertical.svg"
-                          alt=""
-                        />
-                      </div>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">12/12/2012</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">3 Gb</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">Riêng tư</p>
-                    </td>
-                  </tr>
-                  <tr class="text-lists">
-                    <td class="list-item col-1">
-                      <div class="input-icon row a-center">
-                        <input type="radio" name='checked'/>
-                        <div class="file-icon-table">
-                          <img src="./img/Vector.svg" alt="foder" />
+                      <div class="infor-date-items row a-center">
+                        <div class="infor-date-icon">
+                          <img src="./img/Plus.svg" alt="cong" />
+                        </div>
+                        <div class="infor-date-texts">
+                          <p class="">
+                            <strong>Bạn</strong> đã tạo
+                            <a href="/#">Document 1</a>
+                          </p>
+                          <p class="text-small">12 / 12</p>
                         </div>
                       </div>
-                    </td>
-                    <td class="list-item col-5">
-                      <div class="row j-between a-center">
-                        <p class="table-body-text">Doccument</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/DotsThreeVertical.svg"
-                          alt=""
-                        />
-                      </div>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">12/12/2012</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">3 Gb</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">Riêng tư</p>
-                    </td>
-                  </tr>
-                  <tr class="text-lists">
-                    <td class="list-item col-1">
-                      <div class="input-icon row a-center">
-                        <input type="radio" name='checked'/>
-                        <div class="file-icon-table">
-                          <img src="./img/Vector.svg" alt="foder" />
+                      <div class="infor-date-items row a-center">
+                        <div class="infor-date-icon">
+                          <img src="./img/Plus.svg" alt="cong" />
+                        </div>
+                        <div class="infor-date-texts">
+                          <p class="">
+                            <strong>Bạn</strong> đã tạo
+                            <a href="/#">Document</a>
+                          </p>
+                          <p class="text-small">12 / 12</p>
                         </div>
                       </div>
-                    </td>
-                    <td class="list-item col-5">
-                      <div class="row j-between a-center">
-                        <p class="table-body-text">Doccument</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/DotsThreeVertical.svg"
-                          alt=""
-                        />
-                      </div>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">12/12/2012</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">3 Gb</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">Riêng tư</p>
-                    </td>
-                  </tr>
-                  <tr class="text-lists">
-                    <td class="list-item col-1">
-                      <div class="input-icon row a-center">
-                        <input type="radio" name='checked'/>
-                        <div class="file-icon-table">
-                          <img src="./img/Vector.svg" alt="foder" />
-                        </div>
-                      </div>
-                    </td>
-                    <td class="list-item col-5">
-                      <div class="row j-between a-center">
-                        <p class="table-body-text">Doccument</p>
-                        <img
-                          class="icon-thead"
-                          src="./img/DotsThreeVertical.svg"
-                          alt=""
-                        />
-                      </div>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">12/12/2012</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">3 Gb</p>
-                    </td>
-                    <td class="list-item">
-                      <p class="table-body-text">Riêng tư</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                  </div>
+                </div>
+              </button>
             </div>
           </div>
+        </nav>
+        <div class="table-folder">
+          <div class="row a-center">
+            <h3 class="text-head-table">Tệp của tôi</h3>
+          </div>
+          <div class="table">
+            <table class="table-items">
+              <thead class="table-head">
+                <tr class="text-lists">
+                  <th class="list-item col-1">
+                    <div class="input-icon row a-center">
+                      <input type="radio" />
+                      <div class="file-icon-table">
+                        <img src="./img/File.svg" alt="foder" />
+                      </div>
+                    </div>
+                  </th>
+                  <th class="list-item col-5">
+                    <div class="row a-center">
+                      <p class="table-head-text">Tên</p>
+                      <img class="icon-thead" src="./img/ArrowUp.svg" alt="" />
+                    </div>
+                  </th>
+                  <th class="list-item col-2">
+                    <div class="row j-between a-center">
+                      <p class="table-head-text">Đã sửa đổi</p>
+                      <img
+                        class="icon-thead"
+                        src="./img/CaretDown.svg"
+                        alt=""
+                      />
+                    </div>
+                  </th>
+                  <th class="list-item col-2">
+                    <div class="row j-between a-center">
+                      <p class="table-head-text">Dung lượng</p>
+                      <img
+                        class="icon-thead"
+                        src="./img/CaretDown.svg"
+                        alt=""
+                      />
+                    </div>
+                  </th>
+                  <th class="list-item col-2">
+                    <div class="row j-between a-center">
+                      <p class="table-head-text">Chia sẻ</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="text-lists">
+                  <td class="list-item col-1">
+                    <div class="input-icon row a-center">
+                      <input type="radio" name="checked" />
+                      <div class="file-icon-table">
+                        <img src="./img/Vector.svg" alt="foder" />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="list-item col-5">
+                    <div class="row j-between a-center">
+                      <p class="table-body-text">Doccument</p>
+                      <img
+                        class="icon-thead"
+                        src="./img/DotsThreeVertical.svg"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">12/12/2012</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">3 Gb</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">Riêng tư</p>
+                  </td>
+                </tr>
+                <tr class="text-lists">
+                  <td class="list-item col-1">
+                    <div class="input-icon row a-center">
+                      <input type="radio" name="checked" />
+                      <div class="file-icon-table">
+                        <img src="./img/Vector.svg" alt="foder" />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="list-item col-5">
+                    <div class="row j-between a-center">
+                      <p class="table-body-text">Doccument 1</p>
+                      <img
+                        class="icon-thead"
+                        src="./img/DotsThreeVertical.svg"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">12/12/2012</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">3 Gb</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">Riêng tư</p>
+                  </td>
+                </tr>
+                <tr class="text-lists">
+                  <td class="list-item col-1">
+                    <div class="input-icon row a-center">
+                      <input type="radio" name="checked" />
+                      <div class="file-icon-table">
+                        <img src="./img/Vector.svg" alt="foder" />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="list-item col-5">
+                    <div class="row j-between a-center">
+                      <p class="table-body-text">Doccument 2</p>
+                      <img
+                        class="icon-thead"
+                        src="./img/DotsThreeVertical.svg"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">12/12/2012</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">3 Gb</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">Riêng tư</p>
+                  </td>
+                </tr>
+                <tr class="text-lists">
+                  <td class="list-item col-1">
+                    <div class="input-icon row a-center">
+                      <input type="radio" name="checked" />
+                      <div class="file-icon-table">
+                        <img src="./img/Vector.svg" alt="foder" />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="list-item col-5">
+                    <div class="row j-between a-center">
+                      <p class="table-body-text">Doccument 3</p>
+                      <img
+                        class="icon-thead"
+                        src="./img/DotsThreeVertical.svg"
+                        alt=""
+                      />
+                    </div>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">12/12/2012</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">3 Gb</p>
+                  </td>
+                  <td class="list-item">
+                    <p class="table-body-text">Riêng tư</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </body>
